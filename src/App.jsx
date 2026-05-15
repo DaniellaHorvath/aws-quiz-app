@@ -1,126 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
-// import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <section id="center">
-//         <div className="hero">
-//           <img src={heroImg} className="base" width="170" height="179" alt="" />
-//           <img src={reactLogo} className="framework" alt="React logo" />
-//           <img src={viteLogo} className="vite" alt="Vite logo" />
-//         </div>
-//         <div>
-//           <h1>Get started</h1>
-//           <p>
-//             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-//           </p>
-//         </div>
-//         <button
-//           type="button"
-//           className="counter"
-//           onClick={() => setCount((count) => count + 1)}
-//         >
-//           Count is {count}
-//         </button>
-//       </section>
-
-//       <div className="ticks"></div>
-
-//       <section id="next-steps">
-//         <div id="docs">
-//           <svg className="icon" role="presentation" aria-hidden="true">
-//             <use href="/icons.svg#documentation-icon"></use>
-//           </svg>
-//           <h2>Documentation</h2>
-//           <p>Your questions, answered</p>
-//           <ul>
-//             <li>
-//               <a href="https://vite.dev/" target="_blank">
-//                 <img className="logo" src={viteLogo} alt="" />
-//                 Explore Vite
-//               </a>
-//             </li>
-//             <li>
-//               <a href="https://react.dev/" target="_blank">
-//                 <img className="button-icon" src={reactLogo} alt="" />
-//                 Learn more
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-//         <div id="social">
-//           <svg className="icon" role="presentation" aria-hidden="true">
-//             <use href="/icons.svg#social-icon"></use>
-//           </svg>
-//           <h2>Connect with us</h2>
-//           <p>Join the Vite community</p>
-//           <ul>
-//             <li>
-//               <a href="https://github.com/vitejs/vite" target="_blank">
-//                 <svg
-//                   className="button-icon"
-//                   role="presentation"
-//                   aria-hidden="true"
-//                 >
-//                   <use href="/icons.svg#github-icon"></use>
-//                 </svg>
-//                 GitHub
-//               </a>
-//             </li>
-//             <li>
-//               <a href="https://chat.vite.dev/" target="_blank">
-//                 <svg
-//                   className="button-icon"
-//                   role="presentation"
-//                   aria-hidden="true"
-//                 >
-//                   <use href="/icons.svg#discord-icon"></use>
-//                 </svg>
-//                 Discord
-//               </a>
-//             </li>
-//             <li>
-//               <a href="https://x.com/vite_js" target="_blank">
-//                 <svg
-//                   className="button-icon"
-//                   role="presentation"
-//                   aria-hidden="true"
-//                 >
-//                   <use href="/icons.svg#x-icon"></use>
-//                 </svg>
-//                 X.com
-//               </a>
-//             </li>
-//             <li>
-//               <a href="https://bsky.app/profile/vite.dev" target="_blank">
-//                 <svg
-//                   className="button-icon"
-//                   role="presentation"
-//                   aria-hidden="true"
-//                 >
-//                   <use href="/icons.svg#bluesky-icon"></use>
-//                 </svg>
-//                 Bluesky
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-//       </section>
-
-//       <div className="ticks"></div>
-//       <section id="spacer"></section>
-//     </>
-//   )
-// }
-
-// export default App
-
 import { useState } from 'react';
 import { 
   CheckCircle2, XCircle, Award, ArrowRight, 
@@ -483,7 +360,7 @@ export default function App() {
             <div className="bg-blue-100 text-blue-600 p-4 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
               <Dices className="w-8 h-8" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Random Quiz</h2>
+            <h2 className="text-2xl !text-black font-bold mb-2">Random Quiz</h2>
             <p className="text-slate-500 mb-6">
               Test your knowledge with up to 60 randomized multiple-choice questions.
             </p>
@@ -495,12 +372,12 @@ export default function App() {
           {/* Flashcards Button */}
           <button 
             onClick={startFlashcards}
-            className="group bg-white p-8 rounded-3xl shadow-sm border-2 border-transparent hover:border-purple-500 hover:shadow-xl transition-all duration-300 text-left flex flex-col items-start"
+            className="group p-8 bg-white rounded-3xl shadow-sm border-2 border-transparent hover:border-purple-500 hover:shadow-xl transition-all duration-300 text-left flex flex-col items-start"
           >
             <div className="bg-purple-100 text-purple-600 p-4 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
               <BookOpen className="w-8 h-8" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Study Flashcards</h2>
+            <h2 className="text-2xl !text-black font-bold mb-2">Study Flashcards</h2>
             <p className="text-slate-500 mb-6">
               Review concepts with active recall. Flip cards to reveal answers and explanations.
             </p>
@@ -538,7 +415,7 @@ export default function App() {
                 // Front of Card
                 <div className="animate-in fade-in zoom-in-95 duration-300">
                   <span className="text-purple-500 font-semibold tracking-wider uppercase text-sm mb-4 block">Question</span>
-                  <h2 className="text-2xl md:text-3xl font-bold leading-snug text-slate-800">
+                  <h2 className="text-2xl md:text-3xl font-bold leading-snug !text-black">
                     {card.question}
                   </h2>
                   <div className="mt-12 text-slate-400 flex items-center gap-2 text-sm justify-center">
@@ -551,7 +428,7 @@ export default function App() {
                   <span className="text-green-600 font-semibold tracking-wider uppercase text-sm mb-2 block flex items-center gap-1 justify-center">
                     <Check className="w-4 h-4" /> Answer
                   </span>
-                  <h2 className="text-xl md:text-2xl font-bold text-slate-800 mb-6">
+                  <h2 className="text-xl md:text-2xl font-bold !text-black mb-6">
                     {card.options[card.correctAnswer]}
                   </h2>
                   <div className="w-16 h-1 bg-slate-100 rounded-full mb-6"></div>
@@ -594,7 +471,7 @@ export default function App() {
         <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4 font-sans text-slate-800">
           <div className="bg-white rounded-3xl shadow-xl p-10 max-w-md w-full text-center">
             <Award className="w-24 h-24 text-blue-500 mx-auto mb-6" />
-            <h2 className="text-3xl font-bold mb-3">Quiz Complete!</h2>
+            <h2 className="text-3xl font-bold !text-black mb-3">Quiz Complete!</h2>
             <p className="text-slate-500 mb-8">Let's see how you did on your randomized AWS exam.</p>
             
             <div className="bg-blue-50 rounded-2xl p-8 mb-8 border border-blue-100">
@@ -638,7 +515,7 @@ export default function App() {
 
         <div className="bg-white rounded-3xl shadow-lg max-w-3xl w-full mx-auto overflow-hidden flex flex-col flex-grow md:flex-grow-0">
           {/* Header */}
-          <div className="bg-slate-800 text-white p-6 md:p-8">
+          <div className="bg-slate-800 p-6 md:p-8">
             <div className="flex justify-between items-center mb-4">
               <h1 className="text-xl font-bold hidden md:block">AWS Practitioner Quiz</h1>
               <span className="bg-slate-700 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide">
@@ -656,7 +533,7 @@ export default function App() {
   
           {/* Question Area */}
           <div className="p-6 md:p-8 flex-grow">
-            <h2 className="text-xl md:text-2xl font-bold text-slate-800 mb-8 leading-relaxed">
+            <h2 className="text-xl md:text-2xl font-bold !text-black mb-8 leading-relaxed">
               {question.question}
             </h2>
   
