@@ -343,7 +343,7 @@ export default function App() {
           <div className="bg-blue-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <Award className="text-white w-10 h-10" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold !text-black mb-4 tracking-tight">
             AWS Cloud Practitioner Prep
           </h1>
           <p className="text-lg text-slate-600 max-w-lg mx-auto">
