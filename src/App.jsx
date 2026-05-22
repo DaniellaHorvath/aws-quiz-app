@@ -518,7 +518,7 @@ export default function App() {
           <div className="bg-slate-800 p-6 md:p-8">
             <div className="flex justify-between items-center mb-4">
               <h1 className="text-xl font-bold hidden md:block">AWS Practitioner Quiz</h1>
-              <span className="bg-slate-700 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide">
+              <span className="text-white bg-slate-700 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide">
                 Question {currentQuestion + 1} of {activeQuestions.length}
               </span>
             </div>
